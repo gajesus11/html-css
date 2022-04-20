@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -23,15 +24,37 @@
         thead, tfoot{
             background-color: lightgray;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgb(187, 202, 206);
+
+        }
+
+        caption{
+            font-size: 2em;
+            padding: 5px;
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabela Grande</h1>
     <table>
         <thead>
+            <caption>
+                População da Região Sudeste
+            </caption>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -47,11 +70,117 @@
                 <td>Rio de Janeiro</td>
                 <td>17 000 000</td>
             </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 000 000</td>
+            </tr>
+
+
             
         </tbody>
 
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td>83 000 000</td>
         </tfoot>
     </table>
